@@ -3,10 +3,10 @@ facebook:
   permalink: /facebook
   description: Facebook tag description
 
-hello:
-  label: Hello
+kckode:
+  label: KCKode
   permalink: /hello
-  description: Hello tag description
+  description: KCkode
 
 docusaurus:
   label: Docusaurus

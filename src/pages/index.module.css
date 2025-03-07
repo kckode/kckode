@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(135deg, #2a2d3e 0%, #1f1f2c 100%);
+  color: white;
 }
 
 @media screen and (max-width: 996px) {
@@ -20,4 +22,203 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
+}
+
+.codeTag {
+  font-family: 'Courier New', Courier, monospace;
+  color: #44d860;
+}
+
+.inlineCodeTag {
+  font-family: 'Courier New', Courier, monospace;
+  color: #44d860;
+  font-weight: bold;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Mission Section */
+.missionSection {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.missionText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Team Section */
+.teamSection {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.teamMemberCard {
+  padding: 1.5rem;
+  text-align: center;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teamMemberCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.teamMemberAvatar {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+}
+
+.placeholderAvatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #6c63ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.teamMemberName {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.teamMemberTitle {
+  color: #6c63ff;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.teamMemberBio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Tech Stack Section */
+.techStackSection {
+  padding: 4rem 0;
+  background-color: #f0f1f5;
+}
+
+.techBadges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.techBadge {
+  background-color: white;
+  color: #2a2d3e;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.techBadge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #6c63ff;
+  color: white;
+}
+
+/* Contact Section */
+.contactSection {
+  padding: 5rem 0;
+  background-color: #2a2d3e;
+  color: white;
+}
+
+.contactText {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.subscribeForm {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+}
+
+.emailInput {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.emailInput:focus {
+  outline: none;
+}
+
+.subscribeButton {
+  background-color: #44d860;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.subscribeButton:hover {
+  background-color: #3bc255;
+}
+
+.thankYouMessage {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(68, 216, 96, 0.2);
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.socialLink {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  position: relative;
+}
+
+.socialLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #44d860;
+  transition: width 0.3s ease;
+}
+
+.socialLink:hover::after {
+  width: 100%;
 }

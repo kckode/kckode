@@ -1,23 +1,20 @@
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
-  page: true
+chris:
+  name: Christopher Jewell
+  title: Founding Engineer
+  url: https://github.com/cjwayne
+  image_url: https://avatars.githubusercontent.com/u/39494193?v=4
+  page: false
   socials:
-    x: yangshunz
-    github: yangshun
+    x: cjwayne
+    github: cjwayne
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-sebastien-lorber-articles'
+khoa:
+  name: Khoa Le
+  title: Founding Engineer
+  url: https://github.com/lenkhoa
+  image_url: https://avatars.githubusercontent.com/u/13859409?v=4
+  page: false
   socials:
-    x: sebastienlorber
-    linkedin: sebastienlorber
-    github: slorber
-    newsletter: https://thisweekinreact.com
+    x: lendkhoa
+    linkedin: khoalenguyendang
+    github: lendkhoa
