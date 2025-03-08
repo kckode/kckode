@@ -1,12 +1,12 @@
 chris:
   name: Christopher Jewell
   title: Founding Engineer
-  url: https://github.com/cjwayne
+  url: https://github.com/cwaynej
   image_url: https://avatars.githubusercontent.com/u/39494193?v=4
   page: false
   socials:
     x: cjwayne
-    github: cjwayne
+    github: https://github.com/cwaynej
 
 khoa:
   name: Khoa Le

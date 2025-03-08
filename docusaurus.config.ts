@@ -68,7 +68,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "KCKode",
+      title: "",
       logo: {
         alt: "KCKode Logo",
         src: "img/kckode_logo.svg",
@@ -76,7 +76,7 @@ const config: Config = {
       items: [
         { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/kckode/kckode",
           label: "GitHub",
           position: "right",
         },
@@ -94,7 +94,7 @@ const config: Config = {
             },
             {
               label: "GitHub",
-              href: "https://github.com/kckode.git",
+              href: "https://github.com/kckode/kckode",
             },
           ],
         },
