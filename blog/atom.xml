@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kckode.github.io/kckode/blog</id>
+    <id>https://kckode.github.io/blog</id>
     <title>KCKode Blog</title>
     <updated>2025-03-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kckode.github.io/kckode/blog"/>
+    <link rel="alternate" href="https://kckode.github.io/blog"/>
     <subtitle>KCKode Blog</subtitle>
-    <icon>https://kckode.github.io/kckode/img/kckode_logo.ico</icon>
+    <icon>https://kckode.github.io/img/kckode_logo.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://kckode.github.io/kckode/blog/welcome</id>
-        <link href="https://kckode.github.io/kckode/blog/welcome"/>
+        <id>https://kckode.github.io/blog/welcome</id>
+        <link href="https://kckode.github.io/blog/welcome"/>
         <updated>2025-03-07T00:00:00.000Z</updated>
         <author>
             <name>Christopher Jewell</name>

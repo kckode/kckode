@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkckode=self.webpackChunkkckode||[]).push([[291],{9905:e=>{e.exports=JSON.parse('{"tags":[{"label":"KCKode","permalink":"/kckode/blog/tags/hello","description":"KCkode","count":1}]}')}}]);
