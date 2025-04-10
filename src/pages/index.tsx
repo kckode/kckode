@@ -13,7 +13,7 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          KC<span className={styles.codeTag}>&lt;kode&gt;</span>
+          KCKode
         </Heading>
         <p className="hero__subtitle">Crafting Tomorrow's Technology Today</p>
         <div className={styles.buttons}>
@@ -41,7 +41,7 @@ function MissionSection() {
               elegant, efficient solutions. While we're still exploring our
               perfect market fit, our talented engineering team is actively
               developing innovative technologies that will shape the future of
-              [industry/technology domain].
+              technology.
             </p>
           </div>
         </div>

@@ -71,7 +71,7 @@ const config: Config = {
       title: "",
       logo: {
         alt: "KCKode Logo",
-        src: "img/kckode_logo.svg",
+        src: "img/kckode_logo2.svg",
       },
       items: [
         { to: "/blog", label: "Blog", position: "left" },

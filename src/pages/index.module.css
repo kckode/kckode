@@ -13,7 +13,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(42, 45, 62, 0.8) 0%, rgba(31, 31, 44, 0.8) 100%), url('../../static/img/kckode_logo.png');
+  background: linear-gradient(135deg, rgba(42, 45, 62, 0.8) 0%, rgba(31, 31, 44, 0.8) 100%), url('../../static/img/kckode_cover.png');
   background-size: cover;
   background-position: center;
   color: white;
