@@ -36,12 +36,7 @@ function MissionSection() {
               Our Mission
             </Heading>
             <p className={styles.missionText}>
-              At KC<span className={styles.inlineCodeTag}>&lt;kode&gt;</span>,
-              we're on a mission to solve complex technical challenges with
-              elegant, efficient solutions. While we're still exploring our
-              perfect market fit, our talented engineering team is actively
-              developing innovative technologies that will shape the future of
-              technology.
+                At KC Kode, we're on a mission to solve complex technical challenges with elegant, efficient solutions. Our talented engineering team is dedicated to delivering cutting-edge technologies that empower businesses to thrive, and we're committed to crafting tailored software solutions that drive success.
             </p>
           </div>
         </div>
@@ -132,10 +127,10 @@ function ContactSection() {
             <div className="row">
             <div className="col col--6 col--offset-3">
                 <Heading as="h2" className={styles.sectionTitle}>
-                Stay Updated
+                Need a software solution for your business?
                 </Heading>
                 <p className={styles.contactText}>
-                    Ready to turn your ideas into reality? Let's discuss your project and get you a personalized quote.
+                    Turn your ideas into reality! Let's discuss your project and get you a personalized quote.
                 </p>
                 {submitted ? (
                 <div className={styles.thankYouMessage}>
