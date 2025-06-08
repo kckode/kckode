@@ -1,6 +1,6 @@
 ---
 slug: welcome
 title: Welcome
-authors: [chris, khoa]
+authors: [chris]
 tags: [kckode]
 ---
