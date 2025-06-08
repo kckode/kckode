@@ -105,81 +105,95 @@ function TechStackSection() {
 }
 
 function ContactSection() {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the email to your backend
-    console.log("Submitted email:", email);
-    setSubmitted(true);
-    setEmail("");
-    // Reset form state after 3 seconds
-    setTimeout(() => setSubmitted(false), 3000);
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        fetch("https://formspree.io/f/mblygdjw", {
+        method: "POST",
+        body: JSON.stringify({ email, message }),
+        headers: { "Content-Type": "application/json" },
+        })
+        .then((response) => response.json())
+        .then((data) => {
+        setSubmitted(true);
+        setEmail("");
+        setMessage("");
+        setTimeout(() => setSubmitted(false), 3000);
+        })
+        .catch((error) => console.error(error));
+    };
 
-  return (
-    <section id="contact" className={styles.contactSection}>
-      <div className="container">
-        <div className="row">
-          <div className="col col--6 col--offset-3">
-            <Heading as="h2" className={styles.sectionTitle}>
-              Stay Updated
-            </Heading>
-            <p className={styles.contactText}>
-              Interested in what we're building? Join our mailing list to be the
-              first to know about our progress and upcoming product launches.
-            </p>
-            {submitted ? (
-              <div className={styles.thankYouMessage}>
-                Thanks for subscribing! We'll be in touch.
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className={styles.subscribeForm}>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Your email address"
-                  required
-                  className={styles.emailInput}
-                />
-                <button type="submit" className={styles.subscribeButton}>
-                  Subscribe
-                </button>
-              </form>
-            )}
-            <div className={styles.socialLinks}>
-              <a
-                href="https://github.com/kckode"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
-              >
-                GitHub
-              </a>
-              <a
-                href="https://twitter.com/kckode"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
-              >
-                Twitter
-              </a>
-              <a
-                href="https://linkedin.com/company/kckode"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
-              >
-                LinkedIn
-              </a>
+    return (
+        <section id="contact" className={styles.contactSection}>
+        <div className="container">
+            <div className="row">
+            <div className="col col--6 col--offset-3">
+                <Heading as="h2" className={styles.sectionTitle}>
+                Stay Updated
+                </Heading>
+                <p className={styles.contactText}>
+                    Ready to turn your ideas into reality? Let's discuss your project and get you a personalized quote.
+                </p>
+                {submitted ? (
+                <div className={styles.thankYouMessage}>
+                    Thanks for your message! We'll be in touch.
+                </div>
+                ) : (
+                <form onSubmit={handleSubmit} className={styles.subscribeForm}>
+                    <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your email address"
+                    required
+                    className={styles.emailInput}
+                    />
+                    <textarea
+                        name="message"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        placeholder="Your message"
+                        className={styles.messageInput}
+                    />
+                    <button type="submit" className={styles.subscribeButton}>
+                    Send us a message ✉️
+                    </button>
+                </form>
+                )}
+                <div className={styles.socialLinks}>
+                <a
+                    href="https://github.com/kckode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    GitHub
+                </a>
+                <a
+                    href="https://twitter.com/kckode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    Twitter
+                </a>
+                <a
+                    href="https://linkedin.com/company/kckode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.socialLink}
+                >
+                    LinkedIn
+                </a>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
 
 // Sample data - replace with actual data
